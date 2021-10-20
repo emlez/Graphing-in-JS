@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/bbff992efd.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Graphing Calculator</title>
+  </head>
+  <body>
+    <header>
+      <a href="#">
+        <i class="fas fa-chart-line"></i>
+      </a>
+    </header>
+    <main>
+      <section class="welcome">
+        <h1>Graphing Calculator 📊</h1>
+      </section>
+      <section class="graph">
+        <button onclick="pointGraph()">
+          Graph a point
+          <i class="fas fa-dot-circle"></i>
+        </button>
+        <button onclick="barChart()">
+          Graph a bar chart
+          <i class="fas fa-chart-bar"></i>
+        </button>
+        <div>
+          <canvas id="myChart"></canvas>
+        </div>
+        <form action="">
+          <label> Add the points you want to graph. </label>
+          <div class="graphInput-container">
+            <input id="inputLabel" type="text" placeholder="Label" />
+            <input id="inputX" type="number" placeholder="Value for x" />
+            <input id="inputY" type="number" placeholder="Value for y" />
+          </div>
+          <button type="button" onclick="graph()">Graph point</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <a href="https://github.com/emlez/Graphing-Calculator">
+        <p>See source code</p>
+      </a>
+      <p>Made for Platzi Master 💚</p>
+      <div class="footer-social">
+        <a href="https://github.com/emlez/">
+          <i class="fab fa-github-alt"></i>
+        </a>
+        <a href="https://linktr.ee/emlezdev/">
+          <i class="fas fa-link"></i>
+        </a>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

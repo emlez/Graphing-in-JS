@@ -1,0 +1,120 @@
+/*
+Adding styles:
+1. Positioning --> static, absolute, relative, fixed.
+2. Box model --> margin, border, padding, content.
+3. Typography --> tipos, tamaños de fuente, etc.
+4. Visual styles --> box-shadow, border-radius, gradient, etc.
+5. Miscellaneous --> CSS rules & more.
+*/
+/* Initial Setup */
+/* Names of the color given by color picker app (Sip) */
+:root {
+  --hawkes-blue: #d6e0ff;
+  --palatinate-blue: #382ae1;
+  --light-sea-green: #26c0ab;
+  --sherpa-blue: #00494d;
+  --blacked-squeeze: #f4fafa;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: "Space Mono", monospace;
+  color: var(--sherpa-blue);
+  background-color: var(--blacked-squeeze);
+}
+header {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header a {
+  text-decoration: none;
+  font-size: 4.4rem;
+  color: var(--palatinate-blue);
+}
+main h1 {
+  font-size: 2.5rem;
+}
+main {
+  margin: 0 auto;
+  max-width: 800px;
+  height: auto;
+  width: 100%;
+  padding: 3rem 1rem 2rem;
+  border-radius: 3rem;
+  background: var(--hawkes-blue);
+}
+.welcome {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.welcome p {
+  margin: 2rem 0;
+}
+.graph label {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.graphInput-container {
+  margin: 1rem 0;
+  width: 100%;
+  border-radius: 1rem;
+  background-color: var(--hawkes-blue);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+input {
+  width: 80%;
+  height: 4rem;
+  border: none;
+  outline: none;
+  text-align: center;
+  background-color: var(--hawkes-blue);
+  color: var(--sherpa-blue);
+  font-size: 2.4rem;
+  font-family: "Space Mono", monospace;
+}
+button {
+  cursor: pointer;
+  padding: 1.5rem;
+  border: none;
+  background-color: var(--palatinate-blue);
+  color: var(--hawkes-blue);
+  font-family: "Space Mono", monospace;
+  font-size: 1.6rem;
+  width: 100%;
+  border-radius: 1rem;
+  margin-bottom: 0.5rem;
+}
+footer {
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--palatinate-blue);
+  font-size: 1.6rem;
+}
+footer a:nth-last-child(2) {
+  text-decoration: none;
+  color: var(--palatinate-blue);
+}
+footer .footer-social {
+  margin-top: 1rem;
+}
